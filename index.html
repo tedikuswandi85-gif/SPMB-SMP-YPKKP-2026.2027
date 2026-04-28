@@ -14,22 +14,25 @@
         
         .hero-gradient {
             background: linear-gradient(135deg, rgba(30, 58, 138, 0.9) 0%, rgba(30, 58, 138, 0.7) 100%), 
-                        url('https://lh3.googleusercontent.com/d/1A5BDedYOL6fTZAn08VcRmXZpKMA-o-zq');
+                        url('https://i.ibb.co.com/n8rg23Pt/WhatsApp-Image-2026-04-24-at-18-22-05.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
         }
 
-        .glass-card {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+        .gelombang-card {
+            transition: all 0.3s ease;
+            border-top: 6px solid #1e3a8a;
+        }
+        .gelombang-card:hover {
+            transform: translateY(-10px);
+            border-top-color: #f59e0b;
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
 
-    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-slate-100">
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-slate-100">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
                 <img src="https://i.ibb.co.com/DDzytTMn/bangunan-sekolah-2.jpg" alt="Logo SMP YPKKP" class="h-12 w-auto">
@@ -38,143 +41,173 @@
                     <span class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Kota Bandung</span>
                 </div>
             </div>
-            <div class="hidden lg:flex items-center space-x-8">
-                <a href="#visimisi" class="font-semibold text-slate-600 hover:text-blue-900 transition">Visi Misi</a>
-                <a href="#ekstrakurikuler" class="font-semibold text-slate-600 hover:text-blue-900 transition">Ekstrakurikuler</a>
-                <a href="#admin" class="font-semibold text-slate-600 hover:text-blue-900 transition">Hubungi Kami</a>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="#jadwal" class="font-semibold text-slate-600 hover:text-blue-900 transition text-sm">Jadwal</a>
+                <a href="#visimisi" class="font-semibold text-slate-600 hover:text-blue-900 transition text-sm">Visi Misi</a>
+                <a href="#ekstrakurikuler" class="font-semibold text-slate-600 hover:text-blue-900 transition text-sm">Ekskul</a>
+                <a href="#staf" class="font-semibold text-slate-600 hover:text-blue-900 transition text-sm">Pengajar</a>
+                <a href="#admin" class="font-semibold text-slate-600 hover:text-blue-900 transition text-sm">Kontak</a>
             </div>
-            <button onclick="hubungiAdminOtomatis()" class="bg-emerald-500 text-white px-6 py-2.5 rounded-full font-bold shadow-lg hover:bg-emerald-600 transition flex items-center">
+            <button onclick="hubungiAdminOtomatis()" class="bg-emerald-500 text-white px-5 py-2.5 rounded-full font-bold shadow-lg hover:bg-emerald-600 transition flex items-center text-sm">
                 <i class="fab fa-whatsapp mr-2"></i> Daftar Sekarang
             </button>
         </nav>
     </header>
 
-    <section class="hero-gradient text-white pt-32 pb-48 px-6 text-center">
+    <section class="hero-gradient text-white pt-28 pb-40 px-6 text-center">
         <div class="container mx-auto max-w-4xl">
-            <span class="inline-block bg-amber-500 text-blue-950 px-4 py-1.5 rounded-full text-xs font-black mb-8 uppercase tracking-widest">Pendaftaran TA 2026/2027</span>
-            <h1 class="font-serif text-5xl md:text-7xl font-bold mb-8 leading-tight">Generasi Berwawasan Global & Berbudaya Lingkungan</h1>
-            <p class="text-xl text-blue-50 mb-12 leading-relaxed opacity-95">Selamat datang di SMP YPKKP Bandung. Sekolah yang unggul dalam Imtaq, mandiri, dan berprestasi.</p>
+            <span class="inline-block bg-amber-500 text-blue-950 px-4 py-1.5 rounded-full text-xs font-black mb-8 uppercase tracking-widest shadow-lg">Pendaftaran TA 2026/2027</span>
+            <h1 class="font-serif text-5xl md:text-7xl font-bold mb-8 leading-tight drop-shadow-xl text-balance">Membentuk Generasi Berwawasan Global & Berprestasi</h1>
+            <p class="text-xl text-blue-50 mb-12 leading-relaxed opacity-95 max-w-2xl mx-auto">Selamat datang di SMP YPKKP Bandung. Sekolah yang unggul dalam Imtaq, mandiri, dan berbudaya lingkungan.</p>
         </div>
     </section>
 
-    <section id="visimisi" class="py-24 bg-white px-6">
-        <div class="container mx-auto max-w-5xl">
-            <div class="grid md:grid-cols-2 gap-16">
-                <div class="bg-blue-50 p-10 rounded-[3rem] border-l-8 border-amber-500 shadow-sm">
-                    <h2 class="font-serif text-4xl font-bold text-blue-950 mb-6">Visi</h2>
-                    <p class="text-xl italic text-blue-900 leading-relaxed font-semibold">
+    <section id="jadwal" class="py-24 bg-white px-6 -mt-20">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="gelombang-card bg-slate-50 p-8 rounded-3xl text-center shadow-sm">
+                    <h3 class="text-blue-900 font-black text-sm uppercase mb-2">Gelombang 1</h3>
+                    <p class="text-xl font-bold text-slate-800">Oktober - Desember 2025</p>
+                </div>
+                <div class="gelombang-card bg-slate-50 p-8 rounded-3xl text-center shadow-sm border-t-amber-500">
+                    <h3 class="text-amber-600 font-black text-sm uppercase mb-2">Gelombang 2</h3>
+                    <p class="text-xl font-bold text-slate-800">Januari - Maret 2026</p>
+                </div>
+                <div class="gelombang-card bg-slate-50 p-8 rounded-3xl text-center shadow-sm border-t-emerald-500">
+                    <h3 class="text-emerald-600 font-black text-sm uppercase mb-2">Gelombang 3</h3>
+                    <p class="text-xl font-bold text-slate-800">April - Agustus 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="visimisi" class="py-24 bg-slate-50 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div class="bg-white p-10 rounded-[3rem] shadow-sm border-l-8 border-blue-900">
+                    <h2 class="font-serif text-4xl font-bold text-blue-900 mb-6">Visi</h2>
+                    <p class="text-2xl italic text-slate-700 leading-relaxed font-semibold">
                         “Terbentuknya peserta didik yang berwawasan global, mandiri, berprestasi, unggul dalam imtaq dan berbudaya lingkungan”.
                     </p>
                 </div>
                 <div>
-                    <h2 class="font-serif text-4xl font-bold text-blue-950 mb-8">Misi</h2>
-                    <ul class="space-y-4">
-                        <li class="flex items-start space-x-3 text-slate-700">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1"></i>
-                            <span>Menanamkan gemar membaca kepada peserta didik.</span>
-                        </li>
-                        <li class="flex items-start space-x-3 text-slate-700">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1"></i>
-                            <span>Membiasakan peserta didik mandiri dalam segala aktifitas.</span>
-                        </li>
-                        <li class="flex items-start space-x-3 text-slate-700">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1"></i>
-                            <span>Mengoptimalkan peserta didik dalam pemanfaatan IPTEK.</span>
-                        </li>
-                        <li class="flex items-start space-x-3 text-slate-700">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1"></i>
-                            <span>Melaksanakan pembelajaran dan bimbingan secara efektif.</span>
-                        </li>
-                        <li class="flex items-start space-x-3 text-slate-700">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1"></i>
-                            <span>Mendorong peserta didik untuk mengenali potensi dirinya dan mengembangkan keterampilan.</span>
-                        </li>
-                        <li class="flex items-start space-x-3 text-slate-700">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1"></i>
-                            <span>Menumbuhkan penghayatan ajaran agama sehingga terbentuk siswa berakhlakul karimah.</span>
-                        </li>
-                        <li class="flex items-start space-x-3 text-slate-700">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1"></i>
-                            <span>Meningkatkan kreativitas melalui penelitian untuk mencegah kerusakan lingkungan.</span>
-                        </li>
-                    </ul>
+                    <h2 class="font-serif text-4xl font-bold text-blue-900 mb-8">Misi</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start bg-white p-4 rounded-2xl shadow-sm border-l-4 border-amber-500">
+                            <span class="font-bold text-amber-600 mr-3">01.</span>
+                            <p class="text-slate-700">Menanamkan gemar membaca kepada peserta didik.</p>
+                        </div>
+                        <div class="flex items-start bg-white p-4 rounded-2xl shadow-sm border-l-4 border-amber-500">
+                            <span class="font-bold text-amber-600 mr-3">02.</span>
+                            <p class="text-slate-700">Membiasakan peserta didik mandiri dalam segala aktifitas.</p>
+                        </div>
+                        <div class="flex items-start bg-white p-4 rounded-2xl shadow-sm border-l-4 border-amber-500">
+                            <span class="font-bold text-amber-600 mr-3">03.</span>
+                            <p class="text-slate-700">Mengoptimalkan peserta didik dalam pemanfaatan IPTEK.</p>
+                        </div>
+                        <div class="flex items-start bg-white p-4 rounded-2xl shadow-sm border-l-4 border-amber-500">
+                            <span class="font-bold text-amber-600 mr-3">04.</span>
+                            <p class="text-slate-700">Melaksanakan pembelajaran dan bimbingan secara efektif.</p>
+                        </div>
+                        <div class="flex items-start bg-white p-4 rounded-2xl shadow-sm border-l-4 border-amber-500">
+                            <span class="font-bold text-amber-600 mr-3">05.</span>
+                            <p class="text-slate-700">Mendorong peserta didik untuk mengenali potensi diri dan mengembangkan keterampilan.</p>
+                        </div>
+                        <div class="flex items-start bg-white p-4 rounded-2xl shadow-sm border-l-4 border-amber-500">
+                            <span class="font-bold text-amber-600 mr-3">06.</span>
+                            <p class="text-slate-700">Menumbuhkan penghayatan ajaran agama sehingga terbentuk siswa berakhlakul karimah.</p>
+                        </div>
+                        <div class="flex items-start bg-white p-4 rounded-2xl shadow-sm border-l-4 border-amber-500">
+                            <span class="font-bold text-amber-600 mr-3">07.</span>
+                            <p class="text-slate-700">Meningkatkan intelektualitas & kreativitas penelitian untuk mencegah kerusakan lingkungan.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="ekstrakurikuler" class="py-24 bg-slate-50 px-6">
+    <section id="ekstrakurikuler" class="py-24 bg-white px-6">
         <div class="container mx-auto">
-            <h2 class="font-serif text-4xl font-bold text-blue-950 mb-12 text-center">Kegiatan Ekstrakurikuler</h2>
+            <h2 class="font-serif text-4xl font-bold text-blue-900 mb-12 text-center">Kegiatan Ekstrakurikuler</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white rounded-3xl overflow-hidden shadow-lg group">
-                    <img src="https://lh3.googleusercontent.com/d/13Pi4w9QsQGw9Z4aQuvTOejDlr-8pY_8f" alt="Karate" class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="p-6 text-center font-bold text-blue-900">Karate</div>
+                <div class="group bg-slate-50 rounded-3xl overflow-hidden shadow-lg">
+                    <img src="https://lh3.googleusercontent.com/d/13Pi4w9QsQGw9Z4aQuvTOejDlr-8pY_8f" alt="Karate" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="p-6 text-center font-bold text-blue-900 text-xl">Karate</div>
                 </div>
-                <div class="bg-white rounded-3xl overflow-hidden shadow-lg group">
-                    <img src="https://lh3.googleusercontent.com/d/1c-PROlhzk5OQUKMLF-4i2boObGsEWTKu" alt="Futsal" class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="p-6 text-center font-bold text-blue-900">Futsal</div>
+                <div class="group bg-slate-50 rounded-3xl overflow-hidden shadow-lg">
+                    <img src="https://lh3.googleusercontent.com/d/1c-PROlhzk5OQUKMLF-4i2boObGsEWTKu" alt="Futsal" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="p-6 text-center font-bold text-blue-900 text-xl">Futsal</div>
                 </div>
-                <div class="bg-white rounded-3xl overflow-hidden shadow-lg group">
-                    <img src="https://lh3.googleusercontent.com/d/1QbvaVJHx6DkuC2gwNUJDKHWNz9mDj5mT" alt="Pramuka" class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="p-6 text-center font-bold text-blue-900">Pramuka</div>
+                <div class="group bg-slate-50 rounded-3xl overflow-hidden shadow-lg">
+                    <img src="https://lh3.googleusercontent.com/d/1QbvaVJHx6DkuC2gwNUJDKHWNz9mDj5mT" alt="Pramuka" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="p-6 text-center font-bold text-blue-900 text-xl">Pramuka</div>
                 </div>
-                <div class="bg-white rounded-3xl overflow-hidden shadow-lg group">
-                    <img src="https://lh3.googleusercontent.com/d/1W_b0j25jU199Y7bsRj0qe1c_5sSw2KXK" alt="Seni Tari" class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="p-6 text-center font-bold text-blue-900">Seni Tari</div>
+                <div class="group bg-slate-50 rounded-3xl overflow-hidden shadow-lg">
+                    <img src="https://lh3.googleusercontent.com/d/1W_b0j25jU199Y7bsRj0qe1c_5sSw2KXK" alt="Seni Tari" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="p-6 text-center font-bold text-blue-900 text-xl">Seni Tari</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-blue-950 text-white px-6">
+    <section id="staf" class="py-24 bg-blue-900 text-white px-6">
         <div class="container mx-auto grid md:grid-cols-2 gap-16 items-center">
-            <img src="https://lh3.googleusercontent.com/d/1A5BDedYOL6fTZAn08VcRmXZpKMA-o-zq" alt="Staf Pengajar" class="rounded-[3rem] shadow-2xl w-full border-8 border-white/5">
-            <div>
-                <h2 class="font-serif text-4xl font-bold mb-8">Dibimbing Pengajar Profesional</h2>
-                <p class="text-blue-100 text-lg mb-8 opacity-80">Kami berdedikasi membimbing setiap siswa untuk mengenali potensinya melalui pendekatan yang efektif dan religius.</p>
-                <div class="bg-white/10 p-6 rounded-2xl border border-white/10">
-                    <p class="font-bold text-amber-400">Akreditasi A</p>
-                    <p class="text-sm">Standar pendidikan nasional yang terjamin.</p>
+            <div class="order-2 md:order-1">
+                <h2 class="font-serif text-4xl font-bold mb-6">Dibimbing Oleh Pengajar Ahli</h2>
+                <p class="text-blue-100 text-lg mb-8 opacity-80">Kami percaya bahwa pendidikan terbaik lahir dari guru yang berdedikasi. Staf pengajar kami siap membimbing siswa menjadi pribadi yang mandiri dan kompeten.</p>
+                <div class="flex space-x-6">
+                    <div class="text-center">
+                        <p class="text-3xl font-black text-amber-500">Akreditasi</p>
+                        <p class="text-xl font-bold italic">A (Unggul)</p>
+                    </div>
                 </div>
+            </div>
+            <div class="order-1 md:order-2">
+                <img src="https://lh3.googleusercontent.com/d/1A5BDedYOL6fTZAn08VcRmXZpKMA-o-zq" alt="Staf Pengajar SMP YPKKP" class="rounded-[3rem] shadow-2xl border-8 border-white/10 w-full object-cover">
             </div>
         </div>
     </section>
 
     <section id="admin" class="py-24 bg-white px-6 text-center">
         <div class="container mx-auto">
-            <h2 class="font-serif text-4xl font-bold text-blue-950 mb-12">Kontak Pendaftaran</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-slate-50 p-8 rounded-3xl">
-                    <h4 class="font-bold text-blue-900">Admin 1</h4>
-                    <p class="mb-4">0822-9574-7456</p>
-                    <a href="https://wa.me/6282295747456" target="_blank" class="bg-emerald-500 text-white px-6 py-2 rounded-xl block hover:bg-emerald-600 transition">Hubungi</a>
+            <h2 class="font-serif text-4xl font-bold text-blue-900 mb-4">Hubungi Kami</h2>
+            <p class="text-slate-500 mb-16 max-w-xl mx-auto">Silakan pilih admin atau klik tombol daftar di atas untuk terhubung secara otomatis via WhatsApp.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="bg-slate-50 p-8 rounded-3xl border-b-4 border-emerald-500 shadow-sm hover:shadow-lg transition">
+                    <h4 class="font-bold text-blue-900 text-xl mb-1">Admin 1</h4>
+                    <p class="text-slate-500 mb-6 text-sm">082295747456</p>
+                    <a href="https://wa.me/6282295747456" target="_blank" class="bg-emerald-500 text-white px-6 py-2.5 rounded-xl font-bold block hover:bg-emerald-600">Pilih Admin 1</a>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-3xl border-t-4 border-amber-500">
-                    <h4 class="font-bold text-blue-900">Admin 2</h4>
-                    <p class="mb-4">0817-7058-8075</p>
-                    <a href="https://wa.me/6281770588075" target="_blank" class="bg-emerald-500 text-white px-6 py-2 rounded-xl block hover:bg-emerald-600 transition">Hubungi</a>
+                <div class="bg-slate-50 p-8 rounded-3xl border-b-4 border-emerald-500 shadow-sm hover:shadow-lg transition">
+                    <h4 class="font-bold text-blue-900 text-xl mb-1">Admin 2</h4>
+                    <p class="text-slate-500 mb-6 text-sm">081770588075</p>
+                    <a href="https://wa.me/6281770588075" target="_blank" class="bg-emerald-500 text-white px-6 py-2.5 rounded-xl font-bold block hover:bg-emerald-600">Pilih Admin 2</a>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-3xl">
-                    <h4 class="font-bold text-blue-900">Admin 3</h4>
-                    <p class="mb-4">0896-9993-9849</p>
-                    <a href="https://wa.me/6289699939849" target="_blank" class="bg-emerald-500 text-white px-6 py-2 rounded-xl block hover:bg-emerald-600 transition">Hubungi</a>
+                <div class="bg-slate-50 p-8 rounded-3xl border-b-4 border-emerald-500 shadow-sm hover:shadow-lg transition">
+                    <h4 class="font-bold text-blue-900 text-xl mb-1">Admin 3</h4>
+                    <p class="text-slate-500 mb-6 text-sm">089699939849</p>
+                    <a href="https://wa.me/6289699939849" target="_blank" class="bg-emerald-500 text-white px-6 py-2.5 rounded-xl font-bold block hover:bg-emerald-600">Pilih Admin 3</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-blue-950 text-white py-12 px-6 text-center border-t border-white/10">
-        <h3 class="font-bold mb-2">SMP YPKKP BANDUNG</h3>
-        <p class="text-xs opacity-50 uppercase tracking-widest">© 2026 All Rights Reserved</p>
+    <footer class="bg-slate-900 text-white py-12 px-6 text-center border-t border-white/5">
+        <h3 class="font-bold text-xl mb-2">SMP YPKKP BANDUNG</h3>
+        <p class="text-sm opacity-50 max-w-xs mx-auto mb-6">Jl. Cijerah No. 230 Kel. Cijerah, Kec. Bandung Kulon Kota Bandung.</p>
+        <p class="text-xs opacity-30 uppercase tracking-widest">© 2026 All Rights Reserved</p>
     </footer>
 
     <script>
         function hubungiAdminOtomatis() {
-            const admins = ["6282295747456", "6281770588075", "6289699939849"];
-            const random = admins[Math.floor(Math.random() * admins.length)];
-            window.open(`https://wa.me/${random}?text=Halo%20Admin%2C%20saya%20ingin%20daftar%20SMP%20YPKKP.`, '_blank');
+            const daftarAdmin = ["6282295747456", "6281770588075", "6289699939849"];
+            const acak = daftarAdmin[Math.floor(Math.random() * daftarAdmin.length)];
+            const pesan = encodeURIComponent("Halo Admin SMP YPKKP, saya ingin bertanya tentang pendaftaran siswa baru.");
+            window.open(`https://wa.me/${acak}?text=${pesan}`, '_blank');
         }
     </script>
+
 </body>
 </html>
